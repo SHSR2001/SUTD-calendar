@@ -42,9 +42,9 @@ function appendEvent( event ) {
   var eventStartDate = new Date(event.startdate)
   var eventEndDate   = new Date(event.enddate)
   //var eventElement   = $('<div class="event"><a target="_blank" href="' + event.tickets + '">' + event.name + '</a></div>')
-  console.log(event.tickets);
+  console.log(event.location);
   
-  if (event.location.includes("events.html#Online") {
+  if (event.location.includes("Online") {
     var eventElement   = $('<div class="event" style="background-color: #8abfed;"><a target="_blank" href="' + event.tickets + '">' + event.name + '</a></div>')
   else {
     var eventElement   = $('<div class="event"><a target="_blank" href="' + event.tickets + '">' + event.name + '</a></div>')
