@@ -41,14 +41,14 @@ function addMonthMenu() {
 function appendEvent( event ) {
   var eventStartDate = new Date(event.startdate)
   var eventEndDate   = new Date(event.enddate)
-  //var eventElement   = $('<div class="event"><a target="_blank" href="' + event.tickets + '">' + event.name + '</a></div>')
+  var eventElement   = $('<div class="event"><a target="_blank" href="' + event.tickets + '">' + event.name + '</a></div>')
   console.log(event.location);
   
-  if (event.location.includes("Online")) {
-    var eventElement   = $('<div class="event" style="background-color: #8abfed;"><a target="_blank" href="' + event.tickets + '">' + event.name + '</a></div>')
-  else {
-    var eventElement   = $('<div class="event"><a target="_blank" href="' + event.tickets + '">' + event.name + '</a></div>')
-  }
+  //if (event.location.includes("Online")) {
+    //var eventElement   = $('<div class="event" style="background-color: #8abfed;"><a target="_blank" href="' + event.tickets + '">' + event.name + '</a></div>')
+  //else {
+    //var eventElement   = $('<div class="event"><a target="_blank" href="' + event.tickets + '">' + event.name + '</a></div>')
+  //}
 
   // Handle multi-days
   if ( eventEndDate.getDate() ) {
