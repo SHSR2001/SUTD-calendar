@@ -41,7 +41,15 @@ function addMonthMenu() {
 function appendEvent( event ) {
   var eventStartDate = new Date(event.startdate)
   var eventEndDate   = new Date(event.enddate)
-  var eventElement   = $('<div class="event"><a target="_blank" href="' + event.tickets + '">' + event.name + '</a></div>')
+  //var eventElement   = $('<div class="event"><a target="_blank" href="' + event.tickets + '">' + event.name + '</a></div>')
+  
+  if (event.tickets.includes("drd2NJDpck-5UGJImDFiPb8gPkddpdNHvVTRw9gH6aVUMjA5QVJGSEc4OTNRQ0JOMVlOTlNZMkdWVS4u") || event.tickets.includes("IAPFusion360") || event.tickets.includes("events.html#housing-sessions") ) {
+    var eventElement   = $('<div class="event" style="background-color:lightcoral;"><a target="_blank" href="' + event.tickets + '">' + event.name + '</a></div>')
+  } else if (event.tickets==="#") {
+    var eventElement   = $('<div class="event"><a>' + event.name + '</a></div>')
+  } else {
+    var eventElement   = $('<div class="event"><a target="_blank" href="' + event.tickets + '">' + event.name + '</a></div>')
+  }
 
   // Handle multi-days
   if ( eventEndDate.getDate() ) {
