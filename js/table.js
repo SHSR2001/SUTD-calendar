@@ -43,7 +43,7 @@ function appendEvent( event ) {
   var eventEndDate   = new Date(event.enddate)
   //var eventElement   = $('<div class="event"><a target="_blank" href="' + event.tickets + '">' + event.name + '</a></div>')
   
-  if (event.tickets.includes("drd2NJDpck-5UGJImDFiPb8gPkddpdNHvVTRw9gH6aVUMjA5QVJGSEc4OTNRQ0JOMVlOTlNZMkdWVS4u") || event.tickets.includes("IAPFusion360") || event.tickets.includes("KVY44cREncNQquGkVYZUNktXODRMVU5KV01ZVUIxUlJGVUZJUEI4Ti4u") || event.tickets.includes("Presenting") || event.tickets.include("drd2NJDpck-5UGJImDFiPT7laIF8QHhDuji50dJ_xY1UQkVVOFhLMk85WVkyQU1OUVdMUThQUDI2SS4u")) {
+  if (event.tickets.includes("drd2NJDpck-5UGJImDFiPb8gPkddpdNHvVTRw9gH6aVUMjA5QVJGSEc4OTNRQ0JOMVlOTlNZMkdWVS4u") || event.tickets.includes("IAPFusion360") || event.tickets.includes("KVY44cREncNQquGkVYZUNktXODRMVU5KV01ZVUIxUlJGVUZJUEI4Ti4u") || event.tickets.includes("Presenting") || event.tickets.includes("drd2NJDpck-5UGJImDFiPT7laIF8QHhDuji50dJ_xY1UQkVVOFhLMk85WVkyQU1OUVdMUThQUDI2SS4u")) {
     var eventElement   = $('<div class="event" style="background-color:#8abfed;"><a target="_blank" href="' + event.tickets + '">' + event.name + '</a></div>')
   } else if (event.tickets==="#") {
     var eventElement   = $('<div class="event"><a>' + event.name + '</a></div>')
